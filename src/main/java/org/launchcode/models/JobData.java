@@ -67,7 +67,7 @@ public class JobData {
      * with "Enterprise Holdings, Inc".
      *
      * @param column   Column that should be searched.
-     * @param value Value of teh field to search for
+     * @param value Value of the field to search for
      * @return List of all jobs matching the criteria
      */
     public static ArrayList<HashMap<String, String>> findByColumnAndValue(String column, String value) {
@@ -85,7 +85,7 @@ public class JobData {
                 jobs.add(row);
             }
         }
-
+        System.out.println("columnAndValue: " + jobs);
         return jobs;
     }
 
@@ -115,7 +115,7 @@ public class JobData {
                 }
             }
         }
-
+        System.out.println("byValue: " + jobs);
         return jobs;
     }
 
